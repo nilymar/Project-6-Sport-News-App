@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_title">
+    <ListPreference
+        android:defaultValue="@string/settings_order_by_default"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_order_by_key"
+        android:title="@string/settings_order_by_label" />
+    <com.example.android.sportnewsapp.NumberPickerPreference
+        android:defaultValue="10"
+        android:key="@string/settings_articles_number_key"
+        android:title="@string/settings_articles_number_label" />
+    <com.example.android.sportnewsapp.DatePickerPreference
+        android:key="@string/settings_start_date_key"
+        android:title="@string/settings_start_date_label"
+        android:defaultValue="@string/settings_start_date_default" />
+</PreferenceScreen>

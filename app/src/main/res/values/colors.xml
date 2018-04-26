@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroud_main">#fff999</color>
+    <color name="tennis_color">#F44336</color>
+    <color name="buttons_text">#ffffff</color>
+    <color name="football_color">#4CAF50</color>
+    <color name="cycling_color">#01579B</color>
+    <color name="golf_color">#F50057</color>
+    <color name="f1_color">#424242</color>
+    <color name="text_color">#000000</color>
+    <color name="list_item_background">#FFFFFF</color>
+    <color name="gradient_start">#707070</color>
+    <color name="gradient_center">#f8f8f8</color>
+</resources>

@@ -1,0 +1,180 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="frame_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="button_category">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/buttons_text</item>
+        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+    </style>
+
+    <style name="list_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/regulr_margin</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">@dimen/divider_size</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="list_item_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/regulr_margin</item>
+        <item name="android:layout_marginRight">@dimen/regulr_margin</item>
+        <item name="android:layout_marginTop">@dimen/regulr_margin</item>
+        <item name="android:fontFamily">@font/antonregular</item>
+        <item name="android:paddingBottom">@dimen/small_margin</item>
+        <item name="android:paddingLeft">@dimen/regulr_margin</item>
+        <item name="android:paddingRight">@dimen/regulr_margin</item>
+        <item name="android:paddingTop">@dimen/small_margin</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@color/f1_color</item>
+    </style>
+
+    <style name="list_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/regulr_margin</item>
+        <item name="android:layout_marginRight">@dimen/regulr_margin</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/regulr_margin</item>
+        <item name="android:paddingRight">@dimen/regulr_margin</item>
+    </style>
+
+    <style name="list_item_field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/notoserifregular</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="list_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/notoserifregular</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="image_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">@dimen/image_min_width_portrait</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="empty_articles_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_toEndOf">@id/current_image</item>
+        <item name="android:layout_toRightOf">@id/current_image</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="progress_article_landscape" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_toEndOf">@id/current_image</item>
+        <item name="android:layout_toRightOf">@id/current_image</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="empty_articles_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/current_image</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="progress_articles_portrait" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/current_image</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="image_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:minHeight">@dimen/image_min_width_portrait</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="image_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:minHeight">@dimen/min_height_main_portrait</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="empty_main_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/buttons</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="progress_main_portrait" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/buttons</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="number_picker_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/regulr_margin</item>
+        <item name="android:background">@drawable/picker_backgroud</item>
+    </style>
+
+    <style name="about_window">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/regulr_margin</item>
+        <item name="android:layoutDirection">ltr</item>
+        <item name="android:textDirection">ltr</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:textColor">@color/f1_color</item>
+        <item name="android:fontFamily">@font/notoserifregular</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+
+</resources>

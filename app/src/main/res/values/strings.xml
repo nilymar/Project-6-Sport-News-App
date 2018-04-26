@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">"Sport News"</string>
+    <string name="section">"Section: "</string>
+    <string name="author">"Author: "</string>
+    <string name="no_author">Unknown</string>
+    <string name="date">"Published on: "</string>
+    <string name="no_data_available">No Articles found</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="tennis">Tennis</string>
+    <string name="football">Football</string>
+    <string name="cycling">Cycling</string>
+    <string name="golf">Golf</string>
+    <string name="f1">"Formula One"</string>
+    <string name="temp_title">"title of article"</string>
+    <string name="temp_date">"00/00/00"</string>
+    <string name="temp_author">"John Doe"</string>
+    <string name="temp_section">whatever</string>
+    <string name="football_label">Football News</string>
+    <string name="tennis_label">Tennis News</string>
+    <string name="golf_label">Golf News</string>
+    <string name="cycling_label">Cycling News</string>
+    <string name="f1_label">Formula one News</string>
+    <!-- this is the content of the about screen inflated from the menu-->
+    <string name="about_text">The articles are taken from the Guardian newspaper API\n
+        http://open-platform.theguardian.com/documentation/\n\n
+        I used the following resource for the DataPickerPreference: https://github.com/bostonandroid/DatePreference,\n
+        with some adjustments\n\n
+        For the NumberPickerPreference I looked at many online resources, some of which are:\n\n
+        https://stackoverflow.com/questions/17944061/how-to-use-number-picker-with-dialog/17944205#17944205\n\n
+        https://github.com/afarber/android-newbie  https://github.com/vanniktech/VNTNumberPickerPreference\n\n
+        https://github.com/Philio/PreferenceCompatExtended\n\n
+        https://github.com/h6ah4i/android-numberpickerprefcompat\n\n
+        https://github.com/michael-rapp/AndroidMaterialPreferences\n\n
+        https://stackoverflow.com/questions/20758986/android-preferenceactivity-dialog-with-number-picker\n\n</string>
+    <!-- from here every thing is connected to settings preferences -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Articles Settings</string>
+    <!-- Strings for start date preference -->
+    <string name="settings_start_date_label">Start from date</string>
+    <string name="settings_start_date_key" translatable="false">start_date</string>
+    <string name="settings_start_date_default" translatable="false">2010.01.01</string>
+    <!-- Strings for number of articles preference preference -->
+    <string name="settings_articles_number_label">Number of articles to show</string>
+    <string name="settings_articles_number_key" translatable="false">article_number</string>
+    <string name="settings_articles_number_default" translatable="false">10</string>
+    <!-- Strings for Order-By Preference -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
+    <!-- Label for order-by relevance option -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+    <!-- Label for order-by newest option -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+    <!-- Label for order-by oldest option -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+    <string name="query_order_by">order-by</string>
+    <string name="query_article_number">page-size</string>
+    <string name="query_start_date">from-date</string>
+    <string name="xml_date_format">yyyy.MM.dd</string>
+    <string name="query_date_format">yyyy-MM-dd</string>
+    <string name="display_date_format">MMMM dd, yyyy</string>
+    <string name="about_menu_item">About</string>
+</resources>
