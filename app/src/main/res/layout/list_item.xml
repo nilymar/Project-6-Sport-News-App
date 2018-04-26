@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_of_article"
+        android:background="@color/list_item_background"
+        tools:text="@string/temp_title"
+        style="@style/list_item_title" />
+
+    <LinearLayout
+        android:background="@color/list_item_background"
+        android:paddingTop="@dimen/small_margin"
+        style="@style/list_item_line">
+
+        <TextView
+            android:id="@+id/date_text"
+            android:text="@string/date"
+            style="@style/list_item_field" />
+
+        <TextView
+            android:id="@+id/date_of_article"
+            tools:text="@string/temp_date"
+            style="@style/list_item_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/list_item_line"
+        android:background="@color/list_item_background"
+        android:paddingTop="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/author_text"
+            style="@style/list_item_field"
+            android:text="@string/author" />
+
+        <TextView
+            android:id="@+id/author_of_article"
+            style="@style/list_item_text"
+            tools:text="@string/temp_author" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/list_item_line"
+        android:background="@color/list_item_background"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/section_text"
+            style="@style/list_item_field"
+            android:paddingBottom="@dimen/small_margin"
+            android:text="@string/section" />
+
+        <TextView
+            android:id="@+id/section_of_article"
+            style="@style/list_item_text"
+            android:paddingBottom="@dimen/small_margin"
+            tools:text="@string/temp_section" />
+    </LinearLayout>
+</LinearLayout>

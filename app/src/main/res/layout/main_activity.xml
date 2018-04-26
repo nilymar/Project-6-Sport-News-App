@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_main"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/current_image"
+        style="@style/image_main"
+        tools:src="@drawable/sport" />
+
+    <TableLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_image"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                style="@style/frame_layout"
+                android:background="@color/tennis_color">
+
+                <TextView
+                    android:id="@+id/tennis_button"
+                    style="@style/button_category"
+                    android:text="@string/tennis" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/frame_layout"
+                android:background="@color/football_color">
+
+                <TextView
+                    android:id="@+id/football_button"
+                    style="@style/button_category"
+                    android:text="@string/football" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/frame_layout"
+                android:background="@color/cycling_color">
+
+                <TextView
+                    android:id="@+id/cycling_button"
+                    style="@style/button_category"
+                    android:text="@string/cycling" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                style="@style/frame_layout"
+                android:background="@color/f1_color">
+
+                <TextView
+                    android:id="@+id/f1_button"
+                    style="@style/button_category"
+                    android:text="@string/f1" />
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/frame_layout"
+                android:background="@color/golf_color">
+
+                <TextView
+                    android:id="@+id/golf_button"
+                    style="@style/button_category"
+                    android:text="@string/golf" />
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttons">
+        <!-- Layout for a list of articles -->
+        <ListView
+            android:id="@+id/list"
+            style="@style/list_view" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <TextView
+        android:id="@+id/empty_view"
+        style="@style/empty_main_portrait"
+        tools:text="@string/no_data_available" />
+    <!-- progress bar view is only visible when the list is being created -->
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="@style/progress_main_portrait" />
+</RelativeLayout>
