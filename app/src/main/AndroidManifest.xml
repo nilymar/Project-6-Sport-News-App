@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.sportnewsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="false"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.android.sportnewsapp.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.sportnewsapp.FootballActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/football_label"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity" />
+        <activity
+            android:name="com.example.android.sportnewsapp.TennisActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/tennis_label"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity" />
+        <activity
+            android:name="com.example.android.sportnewsapp.GolfActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/golf_label"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity" />
+        <activity
+            android:name="com.example.android.sportnewsapp.CyclingActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/cycling_label"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity" />
+        <activity
+            android:name="com.example.android.sportnewsapp.F1Activity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/f1_label"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity" />
+        <activity
+            android:name="com.example.android.sportnewsapp.SettingActivity"
+            android:screenOrientation="locked"
+            android:label="@string/settings_title"
+            android:parentActivityName="com.example.android.sportnewsapp.MainActivity"/>
+
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.sportnewsapp.MainActivity" />
+
+    </application>
+
+</manifest>
